@@ -1,9 +1,16 @@
 <?php
 
-    $host = '127.0.0.1';
-    $db = 'attendance_db';
-    $user = 'root';
-    $pass = '';
+    //$host = '127.0.0.1';
+    //$db = 'attendance_db';
+    //$user = 'root';
+    //$pass = '';
+    //$charset = 'utf8mb4';
+
+
+    $host = 'sql.freedb.tech';
+    $db = 'freedb_appliedweb';
+    $user = 'freedb_freedb_appliedweb';
+    $pass = '%&2P5szD2Uj&$vE';
     $charset = 'utf8mb4';
 
 
