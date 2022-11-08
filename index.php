@@ -49,6 +49,8 @@
             
         </div>
 
+        <br>
+        
         <div class="mb-3">
             <label for="EmailAddress" class="form-label">Email address</label>
             <input required type="email" class="form-control" id="EmailAddress" name="EmailAddress" aria-describedby="emailHelp">
@@ -61,6 +63,15 @@
             <div id="phone" class="form-text">We'll never share your number with anyone else.</div>
         </div>
 
+            </br>
+        <div class="custom-file">
+        
+            <input type="file" accept="image/*" class="custom-file-input" id="avatar" name="avatar" >
+            <label class="custom-file-label" for="avatar"> Choose File </label>
+            <div id="avatar" class="form-text text-gray"> (File Upload is Optional) </div>
+        </div>
+
+            </br>
         
             <button type="submit" name="submit" class="btn btn-primary">Submit</button>
     </form>

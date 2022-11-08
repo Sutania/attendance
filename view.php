@@ -4,6 +4,7 @@
     
         $title = 'View Record';
         require_once 'includes/header.php'; 
+        //require_once 'includes/authentication_check.php';
         require_once 'db/conn.php';
         
         if (!isset($_GET['id'])){
@@ -23,12 +24,12 @@
         
     ?> 
     
-<br>
-    <br>
+        <br>
+        <br>
 
     
     
-<div class="card" style="width: 18rem;">
+        <div class="card" style="width: 18rem;">
 
 
             <div class="card-body">
@@ -67,11 +68,11 @@
             <a href ="edit.php?id= <?php echo $result['attendee_id'] ?>" class= "btn btn-warning" >Edit</a>
             <a onclick="return confirm('Are you sure you want to delete this record?')"; href ="delete.php?id= <?php echo $result['attendee_id'] ?>" class= "btn btn-danger" >Delete</a>
 
-    <?php } ?>
-    <br>
-    <br>
-    <br>
-    <br>
+            <?php } ?>
+            <br>
+            <br>
+            <br>
+            <br>
 
 
     <?php require_once 'includes/footer.php'; ?>

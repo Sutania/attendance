@@ -11,9 +11,22 @@
             $Contact = $_POST['phone'];
             $DateofBirth = $_POST['DateofBirth'];
             $Specialty = $_POST['Specialty'];
+
+            //$orig_file = $_FILES["avatar"]["tmp_name"];
+            //$ext = pathinfo($_FILES["avatar"]["name"], PATHINFO_EXTENTION);
+            //$target_dir = 'uploads/';
+            //$destination = "$target_dir$Contact.$ext";
+            //move_uploaded_file($orig_file,$destination);
+
+            
+
+
+
+
             $isSuccess = $crud->insertAttendees($FirstName, $LastName, $DateofBirth, $Email, $Contact, $Specialty);
+            $SpecialtyName = $crud->getSpecialtyById($Specialty);
 
-
+            
 
             if($isSuccess){
 
@@ -63,13 +76,15 @@
             </div>
         </div> -->
 
+
+        
         <div class="card" style="width: 18rem;">
             <div class="card-body">
                 <h5 class="card-title">
                 <?php echo   $_POST['FirstName'] . '  ' .    $_POST['LastName']; ?>
                 </h5>
                 <h6 class="card-subtitle mb-2 text-muted">
-                <?php echo   $_POST['Specialty']; ?>
+                <?php echo   $SpecialtyName['name']; ?>
 
                 </h6>
                 <p class="card-text">
