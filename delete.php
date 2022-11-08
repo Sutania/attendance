@@ -2,7 +2,7 @@
     
     //require_once 'includes/authentication_check.php';
     //$title = 'Edit Record';
-    //require_once 'includes/header.php'; 
+    require_once 'includes/header.php'; 
     require_once 'db/conn.php';
 
     if(!$_GET['id'])
